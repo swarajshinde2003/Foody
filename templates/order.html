@@ -13,23 +13,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
 
-   
+    <style>
+        /* ORDER PAGE  */
+
+        .order_main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* margin-top: 100px; */
+            /* position: fixed; */
+
+        }
+
+        #item {
+            /* border : solid black; */
+            box-shadow: 0 0 10px black;
+            border-radius: 30px;
+            width: 29%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f5f2f2;
+            margin: 20px 20px 20px 20px;
+            /* position: relative; */
+            overflow: hidden;
+
+        }
+
+        .image {
+            width: 305px;
+            height: 218px;
+            /* position: absolute; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+
+        }
+
+        #image {
+            width: 107%;
+            height: 82%;
+            margin-top: 30px;
+            display: block;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        #image:hover {
+            transform: scale(1.2);
+            display: block;
+            overflow: hidden;
+            position: static;
+        }
+
+        #item h1 {
+            font-family: 'Baloo 2', cursive;
+            font-size: 20px;
+        }
+
+        #item h2 {
+            color: orangered;
+            margin-top: 7px;
+        }
+
+        #item button {
+            width: 54%;
+            height: 47px;
+            border: solid orange;
+            border-radius: 7px;
+            background: white;
+            margin: 11px 22px 9px 20px;
+        }
+
+        #item button:hover {
+            background-color: orange;
+            color: white;
+        }
+    </style>
 
 </head>
 
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="static/image/logo1.png" alt=" logo" height="40px" width = "40px">
-            <div id = "foody">
-                <h1 ><strong>Foody</strong>  </h1>
+            <img src="static/image/logo1.png" alt=" logo" height="40px" width="40px">
+            <div id="foody">
+                <h1><strong>Foody</strong> </h1>
             </div>
-          
-            
+
+
         </div>
-        <div >
+        <div>
             <ul id="center_navbar">
                 <li><a class="item" href="/">Home</a></li>
                 <!-- <li ><a class = "item"  href="#services-container"></a></li> -->
@@ -38,60 +118,61 @@
                 <li><a class="item" href="/contact">Contact us</a></li>
 
             </ul>
-          </div>
-          
+        </div>
+
         <div class="main_cart">
             <a href="templates\cart.html">
-            <svg xmlns="http://www.w3.org/2000/svg"  class="cart" >
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="cart">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
             </a>
         </div>
     </nav>
     <section class="order_main">
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss8.jpg" alt="">
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss8.jpg" alt="">
             </div>
             <h1>Hot Wings</h1>
             <h2>&#8377;70.00</h2>
             <button>Add to cart</button>
         </div>
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss7.jpg" alt="">
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss7.jpg" alt="">
             </div>
             <h1>Fish dish</h1>
             <h2>&#8377;70.00</h2>
             <button>Add to cart</button>
         </div>
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss6.jpg" alt="">
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss6.jpg" alt="">
             </div>
             <h1>Pasta with meat</h1>
             <h2>&#8377;70.00</h2>
             <button>Add to cart</button>
         </div>
         <div id="item">
-                <div class="image">
-                    <img id="image" src="static/image/ss5.jpg" alt="">
-                </div>
-                <h1>Roasted chicken</h1>
-                <h2>&#8377;70.00</h2>
-                <button>Add to cart</button>
+            <div class="image">
+                <img id="image" src="static/image/ss5.jpg" alt="">
             </div>
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss9.jpg" alt="">
+            <h1>Roasted chicken</h1>
+            <h2>&#8377;70.00</h2>
+            <button>Add to cart</button>
+        </div>
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss9.jpg" alt="">
             </div>
             <h1>Crepes</h1>
             <h2>&#8377;70.00</h2>
             <button>Add to cart</button>
         </div>
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss10.jpg" alt="">
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss10.jpg" alt="">
             </div>
             <h1>Burger</h1>
             <h2>&#8377;70.00</h2>
@@ -106,17 +187,17 @@
             <button>Add to cart</button>
         </div>
         </div>
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss11.jpg" alt="">
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss11.jpg" alt="">
             </div>
             <h1>Noodles</h1>
             <h2>&#8377;70.00</h2>
             <button>Add to cart</button>
         </div>
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss12.jpg" alt="">
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss12.jpg" alt="">
             </div>
             <h1>Chicken kebab</h1>
             <h2>&#8377;70.00</h2>
@@ -130,31 +211,32 @@
             <h2>&#8377;70.00</h2>
             <button>Add to cart</button>
         </div>
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss13.jpg" alt="">
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss13.jpg" alt="">
             </div>
             <h1>Malai Kofta</h1>
             <h2>&#8377;70.00</h2>
             <button>Add to cart</button>
         </div>
-        <div id = "item">
-            <div class = "image">
-            <img id= "image" src="static/image/ss14.jpg" alt="">
+        <div id="item">
+            <div class="image">
+                <img id="image" src="static/image/ss14.jpg" alt="">
             </div>
             <h1>Chicken patties</h1>
             <h2>&#8377;70.00</h2>
             <button>Add to cart</button>
         </div>
-        
-        
-     
-        
+
+
+
+
     </section>
     <footer class="center">
         copyright &copy; foodie.com
 
     </footer>
-    
+
 </body>
+
 </html>
