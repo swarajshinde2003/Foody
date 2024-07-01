@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Food Delivery | mymeals.com</title>
-<<<<<<< HEAD
+
     <link rel="stylesheet" href="/static/css/style.css" crossorigin>
     <link rel="stylesheet" media="screen and (max-width:900px)" href="/static/css/phone.css" crossorigin>
-=======
-<!--     <link rel="stylesheet" href="static//css//style.css">
+
+    <!--     <link rel="stylesheet" href="static//css//style.css">
     <link rel="stylesheet" media="screen and (max-width:900px)" href="static/css/phone.css"> -->
-    <link rel="stylesheet" href="static/css/style.css?v=1.0">
-    <link rel="stylesheet" media="screen and (max-width:900px)" href="static/css/phone.css?v=1.0">
->>>>>>> ac2382770b732a51711a2638e1377d9cb408d515
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
@@ -24,6 +23,126 @@
         rel="stylesheet">
 
     <style>
+        /* NAvigation bar logo img  */
+        #logo {
+            display: flex;
+            flex-direction: row;
+            width: 30%;
+        }
+
+        #foody {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Tangerine", cursive;
+            font-size: 30px;
+            color: black;
+        }
+
+        #logo img {
+            padding: 5px 5px;
+            height: 54px;
+            width: 53px;
+            border-radius: 42px;
+
+        }
+
+
+        /* Navigation  */
+        #navbar {
+            color: red;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            position: sticky;
+            font-family: 'Baloo 2', cursive;
+            align-items: center;
+            top: 0px;
+            background-color: rgb(255, 255, 255);
+            z-index: 1000;
+            color: black;
+
+        }
+
+        /* #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+} */
+
+        /* Navigation bar ul  */
+
+
+
+        .item {
+
+            list-style: none;
+            margin: -8px 4px;
+            text-decoration: none;
+            padding: 5px 5px;
+            display: flex;
+            width: 79px;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        .item:hover {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 5px;
+        }
+
+        #center_navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin: 20px 20px;
+            padding: 5px 5px;
+            border-radius: 20px;
+            color: black;
+            width: 98%;
+            list-style: none;
+
+        }
+
+        .main_cart {
+            display: flex;
+            width: 32%;
+            justify-content: flex-end;
+        }
+
+        .cart {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            padding: 15px 15px;
+        }
+
+        .cart:hover {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 15px 15px;
+        }
+
         /* ORDER PAGE  */
 
         .order_main {
@@ -109,7 +228,7 @@
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="static/image/logo1.png" alt=" logo" height="40px" width="40px">
+            <img src="static\image\logo1.png" alt=" logo" height="40px" width="40px">
             <div id="foody">
                 <h1><strong>Foody</strong> </h1>
             </div>
@@ -118,11 +237,11 @@
         </div>
         <div>
             <ul id="center_navbar">
-                <li><a class="item" href="/">Home</a></li>
+                <li><a class="item" href="index.html">Home</a></li>
                 <!-- <li ><a class = "item"  href="#services-container"></a></li> -->
                 <!-- <li ><a class = "item"  href="#clients-section">Our clients</a></li> -->
-                <li><a class="item" href="/order">Menu</a></li>
-                <li><a class="item" href="/contact">Contact us</a></li>
+                <li><a class="item" href="templates\order.html">Menu</a></li>
+                <li><a class="item" href="templates\contact.html">Contact us</a></li>
 
             </ul>
         </div>
@@ -139,7 +258,7 @@
     <section class="order_main">
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss8.jpg" alt="">
+                <img id="image" src="static\image\ss8.jpg" alt="">
             </div>
             <h1>Hot Wings</h1>
             <h2>&#8377;70.00</h2>
@@ -147,7 +266,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss7.jpg" alt="">
+                <img id="image" src="static\image\ss7.jpg" alt="">
             </div>
             <h1>Fish dish</h1>
             <h2>&#8377;70.00</h2>
@@ -155,7 +274,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss6.jpg" alt="">
+                <img id="image" src="static\image\ss6.jpg" alt="">
             </div>
             <h1>Pasta with meat</h1>
             <h2>&#8377;70.00</h2>
@@ -163,7 +282,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss5.jpg" alt="">
+                <img id="image" src="static\image\ss5.jpg" alt="">
             </div>
             <h1>Roasted chicken</h1>
             <h2>&#8377;70.00</h2>
@@ -171,7 +290,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss9.jpg" alt="">
+                <img id="image" src="static\image\ss9.jpg" alt="">
             </div>
             <h1>Crepes</h1>
             <h2>&#8377;70.00</h2>
@@ -179,7 +298,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss10.jpg" alt="">
+                <img id="image" src="static\image\ss10.jpg" alt="">
             </div>
             <h1>Burger</h1>
             <h2>&#8377;70.00</h2>
@@ -187,7 +306,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss3.jpg" width="200" height="300">
+                <img id="image" src="static\image\ss3.jpg" width="200" height="300">
             </div>
             <h1>Spaghetti pasta</h1>
             <h2>&#8377;70.00</h2>
@@ -196,7 +315,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss11.jpg" alt="">
+                <img id="image" src="static\image\ss11.jpg" alt="">
             </div>
             <h1>Noodles</h1>
             <h2>&#8377;70.00</h2>
@@ -204,7 +323,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss12.jpg" alt="">
+                <img id="image" src="static\image\ss12.jpg" alt="">
             </div>
             <h1>Chicken kebab</h1>
             <h2>&#8377;70.00</h2>
@@ -212,7 +331,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss4.jpg" alt="">
+                <img id="image" src="static\image\ss4.jpg" alt="">
             </div>
             <h1>Pizza</h1>
             <h2>&#8377;70.00</h2>
@@ -220,7 +339,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss13.jpg" alt="">
+                <img id="image" src="static\image\ss13.jpg" alt="">
             </div>
             <h1>Malai Kofta</h1>
             <h2>&#8377;70.00</h2>
@@ -228,7 +347,7 @@
         </div>
         <div id="item">
             <div class="image">
-                <img id="image" src="static/image/ss14.jpg" alt="">
+                <img id="image" src="static\image\ss14.jpg" alt="">
             </div>
             <h1>Chicken patties</h1>
             <h2>&#8377;70.00</h2>
